@@ -9,7 +9,7 @@ from backend.serializer import ImagesSerializer
 from backend.models import images
 import os
 import json
-api="AIzaSyC83ZzWxTViHv1VjYoxh2Td7B-RZUm_bDk"
+api=os.getenv("API")
 print(api)
 class AIapi(APIView):
  def post(self,request):
